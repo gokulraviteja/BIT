@@ -25,7 +25,7 @@ SECRET_KEY = 'zkn*bnoyhjr@q$yrkg8^9l272^=2u_#xz7!&b*q36tg&@8h!dq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gokulraviteja.pythonanywhere.com']
 
 
 # Application definition
