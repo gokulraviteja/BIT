@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Administration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+ body{
+ background-color:lavender;
+ }
+#heading{
+position:relative;
+color:red;
+font-size:45px;
+margin-left:17px;
+text-shadow:2px 2px White;
+text-align:center;
+font-family:Comic Sans, Comic Sans MS, cursive;
+margin-top:100px;
+
+}
+.winner{
+	font-size:20px;
+	margin:5px;
+	padding:0px 14px 0px 14px;
+
+}
+
+.dropsize{
+	font-size:16px;
+}
+.dropsize:hover{
+ color:red;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 100%;
+  }
+
+.footer{
+	position: relative;
+	clear: both;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgba(75,75,75,0.8);
+   color: white;
+   text-align: center;
+   min-height:100px;
+
+	}
+#myCarousel{
+width:600px;
+height:400px;
+box-shadow:2px 2px 7px #FF0000;
+
+}
+.navbar{
+background-color:rgba(75,75,75,0.8);
+border-color:rgba(75,75,75,0.8);
+}
+
+
+
+li{
+margin-top:30px;
+padding:0px;
+margin-left:0px;
+height:100%;
+}
+address{
+margin-top:30px;
+}
+
+
+
+
+.footer a{
+color:white;
+}
+.footer a:hover{
+color:red;
+}
+#headhe{
+margin-left:0px;
+height
+}
+blockquote{
+
+width:1200px;}
+
+<!--navbar right ka hai
+.navbar-inverse .navbar-nav >li:hover{
+background:red;
+}
+
+.navbar-inverse .navbar-nav >li>a{
+color:red;
+}
+
+{
+  background:red;
+  color:lavenderblush;
+
+}-->
+.navbar-inverse a{
+color:white;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:onclick{
+  background-color:black;
+  color:white;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+color:white;
+background-color:red;
+}
+
+#admin:hover{
+background-color:black;
+}
+.footer a{
+text-decoration:none;
+}
+.footer li{
+margin:25px;
+}
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color:white;
+  margin:0px 7px 3px 0px;
+  border-radius: 50%;
+  display: inline-block;
+}
+  </style>
+
+  </head>
+
+
+ <body>
+   <!--Navbar ka hai-->
+    <nav class="navbar navbar-inverse" style="height:100px;">
+    <div class="container-fluid" id="headhe">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="padding:0px;margin:6px" href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Birla_Institute_of_Technology_Mesra.svg/220px-Birla_Institute_of_Technology_Mesra.svg.png" style="height:90px;padding:0px;margin:0px"/></a>
+
+    </div>
+
+    <br><a href="#"  id="heading">BIT Directory</a>
+    <ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+      <li><a href="/home" id="admin" class="winner" style="margin:-2px 0px 2px 2px;color:white;">HOME</a></li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;"><span class="winner">Faculty</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color: #FF0000;min-width:146.5px;border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+          <li><a href="/faculty/cse" class="dropsize" >cse</a></li>
+          <li><a href="/faculty/ece" class="dropsize">ece</a></li>
+          <li><a href="/faculty/eee" class="dropsize">eee</a></li>
+          <li><a href="/faculty/mech" class="dropsize">mech</a></li>
+          <li><a href="/faculty/civil" class="dropsize">civil</a></li>
+          <li><a href="/faculty/prod" class="dropsize">prod</a></li>
+          <li><a href="/faculty/bio" class="dropsize">bio tech</a></li>
+          <li><a href="/faculty/chemeng" class="dropsize">Chem Eng</a></li>
+          <li><a href="/faculty/chem" class="dropsize">Chemistry</a></li>
+          <li><a href="/faculty/arch" class="dropsize">Architecture</a></li>
+          <li><a href="/faculty/mat" class="dropsize">Maths</a></li>
+          <li><a href="/faculty/phy" class="dropsize">Physics</a></li>
+
+          <li><a href="/faculty/hotel" class="dropsize">Hotel Mana..</a></li>
+          <li><a href="/faculty/manage" class="dropsize">Management</a></li>
+          <li><a href="/faculty/space" class="dropsize">Space Eng</a></li>
+          <li><a href="/faculty/remote" class="dropsize">Remote sensing</a></li>
+          <li><a href="/faculty/pharm" class="dropsize">Pharmaceutical</a></li>
+
+
+
+        </ul>
+      </li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;;"><span class="winner">Shops</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color: #FF0000;min-width:139px;border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+          <li><a href="/shops/canteens" class="dropsize" >Canteens</a></li>
+          <li><a href="/shops/stationary" class="dropsize">Stationary</a></li>
+          <li><a href="/shops/tailor" class="dropsize">Tailor</a></li>
+        </ul>
+      </li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;"><span class="winner">Transport</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color:rgba(255, 26, 26,1);border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;;min-width:166px;">
+          <li><a href="/transport/busdirectory" class="dropsize">BusDirectory</a></li>
+          <li><a href="/transport/rentals" class="dropsize" >Rentals</a></li>
+          <li><a href="/transport/autodirectory" class="dropsize">Auto Directory</a></li>
+
+        </ul>
+      </li>
+    </ul>
+    </div>
+    </nav>
+  <!--nav ka katham-->
+
+<!--Content-->
+<div class="container">
+<blockquote>
+Birla Institute of Technology, Mesra (BIT Mesra) is an Indian institute of higher education and a deemed University under Section 3 of the UGC Act. It was established in the year 1955 at Mesra, Ranchi in the state of Jharkhand, India by the philanthropist and industrialist Late Shri. B. M. Birla. The institute was later headed by Late Shri G.P Birla and the present chairman of the board of governors is Shri C.K Birla.
+
+The main campus at Mesra is a wholly residential campus. Following the establishment of the main campus in Mesra, extension centres have been established in several regions of India including Jaipur, Noida, Kolkata, Patna, Ranchi, Deoghar, and University Polytechnic (Ranchi) as well as offshore centres in Ras al-Khaimah, UAE and Muscat, Oman.
+Birla Institute of Technology, Mesra (BIT Mesra) is an Indian institute of higher education and a deemed University under Section 3 of the UGC Act. It was established in the year 1955 at Mesra, Ranchi in the state of Jharkhand, India by the philanthropist and industrialist Late Shri. B. M. Birla. The institute was later headed by Late Shri G.P Birla and the present chairman of the board of governors is Shri C.K Birla.
+
+The main campus at Mesra is a wholly residential campus. Following the establishment of the main campus in Mesra, extension centres have been established in several regions of India including Jaipur, Noida, Kolkata, Patna, Ranchi, Deoghar, and University Polytechnic (Ranchi) as well as offshore centres in Ras al-Khaimah, UAE and Muscat, Oman.
+Birla Institute of Technology, Mesra (BIT Mesra) is an Indian institute of higher education and a deemed University under Section 3 of the UGC Act. It was established in the year 1955 at Mesra, Ranchi in the state of Jharkhand, India by the philanthropist and industrialist Late Shri. B. M. Birla. The institute was later headed by Late Shri G.P Birla and the present chairman of the board of governors is Shri C.K Birla.
+
+The main campus at Mesra is a wholly residential campus. Following the establishment of the main campus in Mesra, extension centres have been established in several regions of India including Jaipur, Noida, Kolkata, Patna, Ranchi, Deoghar, and University Polytechnic (Ranchi) as well as offshore centres in Ras al-Khaimah, UAE and Muscat, Oman.
+Birla Institute of Technology, Mesra (BIT Mesra) is an Indian institute of higher education and a deemed University under Section 3 of the UGC Act. It was established in the year 1955 at Mesra, Ranchi in the state of Jharkhand, India by the philanthropist and industrialist Late Shri. B. M. Birla. The institute was later headed by Late Shri G.P Birla and the present chairman of the board of governors is Shri C.K Birla.
+
+The main campus at Mesra is a wholly residential campus. Following the establishment of the main campus in Mesra, extension centres have been established in several regions of India including Jaipur, Noida, Kolkata, Patna, Ranchi, Deoghar, and University Polytechnic (Ranchi) as well as offshore centres in Ras al-Khaimah, UAE and Muscat, Oman.
+Birla Institute of Technology, Mesra (BIT Mesra) is an Indian institute of higher education and a deemed University under Section 3 of the UGC Act. It was established in the year 1955 at Mesra, Ranchi in the state of Jharkhand, India by the philanthropist and industrialist Late Shri. B. M. Birla. The institute was later headed by Late Shri G.P Birla and the present chairman of the board of governors is Shri C.K Birla.
+
+The main campus at Mesra is a wholly residential campus. Following the establishment of the main campus in Mesra, extension centres have been established in several regions of India including Jaipur, Noida, Kolkata, Patna, Ranchi, Deoghar, and University Polytechnic (Ranchi) as well as offshore centres in Ras al-Khaimah, UAE and Muscat, Oman.
+</blockquote>
+</div>
+
+<!--footer -->
+
+   <div class="footer">
+  	<div class="container" style="color:white">
+  		<div class="row">
+  			<div class="col-sm-4">
+  			<address style="color:white;font-size:15px;">
+  			<b><u>Contact BIT Campuses</u></b>
+  			<br>BIT Mesra Campus
+  			<br>Birla Institute of Technology, Mesra
+  			<br>Ranchi, Jharkhand 835215
+  			<br>PABX: +91 651 2275444/2275896
+  			<br>Fax: 0651 2275401
+  			</address>
+  			</div>
+  			<div class="col-sm-4">
+  				<ul style="list-style-type: none;font-size:17px;">
+  				<li><a href="http://erp.bitmesra.ac.in/iitmsv4eGq0RuNHb0G5WbhLmTKLmTO7YBcJ4RHuXxCNPvuIw=?enc=EGbCGWnlHNJ/WdgJnKH8DA==" ><span class="dot"></span>ERP</a><li>
+  				<li><a href="/home"><span class="dot"></span>HOME</a><li>
+            <li><a href="http://115.114.127.54:8080/psp/bitcsprd/EMPLOYEE/HRMS/c/B_STDNT_SLF.B_SEM_CRSE_MAP.GBL?PORTALPARAM_PTCNAV=BIT_STDNT_REGISTRATION&EOPP.SCNode=HRMS&EOPP.SCPortal=EMPLOYEE&EOPP.SCName=CO_EMPLOYEE_SELF_SERVICE&EOPP.SCLabel=Self%2520Service&EOPP.SCPTfname=CO_EMPLOYEE_SELF_SERVICE&FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.BIT_STDNT_REGISTRATION&IsFolder=false&cmd=login&languageCd=ENG" style="margin-left:31	px;"><span class="dot"></span>Old ERP</a><li>
+  				</ul>
+  			</div>
+  			<div class="col-sm-4">
+  				<ul style="list-style-type: none;font-size:17px;float:left;">
+  				<li><a href="http://placement.bitmesra.ac.in/" style="margin-left:14px;"><span class="dot"></span>Placement Portal</a><li>
+  				<li><a href="https://www.bitmesra.ac.in/UploadedDocuments/adminpoly/files/List%20of%20Holidays.pdf"><span class="dot"></span>List of holidays</a><li>
+  				<li><a href="https://www.bitmesra.ac.in/Show_Content_Section?cid=1&pid=285"><span class="dot"></span>TELEPHONE DIRECTORY</a><li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+   </div>
+  <!--footer ends-->
+
+</body>
+ </html>

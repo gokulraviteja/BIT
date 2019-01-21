@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>CSE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+ body{
+ background-color:lavender;
+ }
+#heading{
+position:relative;
+color:red;
+font-size:45px;
+margin-left:17px;
+text-shadow:2px 2px White;
+text-align:center;
+font-family:Comic Sans, Comic Sans MS, cursive;
+margin-top:100px;
+
+}
+.winner{
+	font-size:20px;
+	margin:5px;
+	padding:0px 14px 0px 14px;
+
+}
+
+.dropsize{
+	font-size:16px;
+}
+.dropsize:hover{
+ color:red;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 100%;
+  }
+
+.footer{
+	position: relative;
+	clear: both;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgba(75,75,75,0.8);
+   color: white;
+   text-align: center;
+   min-height:100px;
+
+	}
+#myCarousel{
+width:600px;
+height:400px;
+box-shadow:2px 2px 7px #FF0000;
+
+}
+.navbar{
+background-color:rgba(75,75,75,0.8);
+border-color:rgba(75,75,75,0.8);
+}
+
+
+
+li{
+margin-top:30px;
+padding:0px;
+margin-left:0px;
+height:100%;
+}
+address{
+margin-top:30px;
+}
+
+
+
+
+.footer a{
+color:white;
+}
+.footer a:hover{
+color:red;
+}
+#headhe{
+margin-left:0px;
+height
+}
+blockquote{
+
+width:1200px;}
+
+<!--navbar right ka hai
+.navbar-inverse .navbar-nav >li:hover{
+background:red;
+}
+
+.navbar-inverse .navbar-nav >li>a{
+color:red;
+}
+
+{
+  background:red;
+  color:lavenderblush;
+
+}-->
+.navbar-inverse a{
+color:white;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:onclick{
+  background-color:black;
+  color:white;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+color:white;
+background-color:red;
+}
+
+#admin:hover{
+background-color:black;
+}
+.footer a{
+text-decoration:none;
+}
+.footer li{
+margin:25px;
+}
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color:white;
+  margin:0px 7px 3px 0px;
+  border-radius: 50%;
+  display: inline-block;
+}
+  </style>
+
+  </head>
+<body>
+
+   <!--Navbar ka hai-->
+    <nav class="navbar navbar-inverse" style="height:100px;">
+    <div class="container-fluid" id="headhe">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="padding:0px;margin:6px" href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Birla_Institute_of_Technology_Mesra.svg/220px-Birla_Institute_of_Technology_Mesra.svg.png" style="height:90px;padding:0px;margin:0px"/></a>
+
+    </div>
+
+    <br><a href="#"  id="heading">BIT Directory</a>
+    <ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+      <li><a href="/Administration" id="admin" class="winner" style="margin:-2px 0px 2px 2px;color:white;">Administration</a></li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;"><span class="winner">Faculty</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color: #FF0000;min-width:146.5px;border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+          <li><a href="/faculty/cse" class="dropsize" >cse</a></li>
+          <li><a href="/faculty/ece" class="dropsize">ece</a></li>
+          <li><a href="/faculty/eee" class="dropsize">eee</a></li>
+          <li><a href="/faculty/mech" class="dropsize">mech</a></li>
+          <li><a href="/faculty/civil" class="dropsize">civil</a></li>
+          <li><a href="/faculty/prod" class="dropsize">prod</a></li>
+          <li><a href="/faculty/bio" class="dropsize">bio tech</a></li>
+          <li><a href="/faculty/chemeng" class="dropsize">Chem Eng</a></li>
+          <li><a href="/faculty/chem" class="dropsize">Chemistry</a></li>
+          <li><a href="/faculty/arch" class="dropsize">Architecture</a></li>
+          <li><a href="/faculty/mat" class="dropsize">Maths</a></li>
+          <li><a href="/faculty/phy" class="dropsize">Physics</a></li>
+
+          <li><a href="/faculty/hotel" class="dropsize">Hotel Mana..</a></li>
+          <li><a href="/faculty/manage" class="dropsize">Management</a></li>
+          <li><a href="/faculty/space" class="dropsize">Space Eng</a></li>
+          <li><a href="/faculty/remote" class="dropsize">Remote sensing</a></li>
+          <li><a href="/faculty/pharm" class="dropsize">Pharmaceutical</a></li>
+
+
+
+        </ul>
+      </li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;;"><span class="winner">Shops</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color: #FF0000;min-width:139px;border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+          <li><a href="/shops/canteens" class="dropsize" >Canteens</a></li>
+          <li><a href="/shops/stationary" class="dropsize">Stationary</a></li>
+          <li><a href="/shops/tailor" class="dropsize">Tailor</a></li>
+        </ul>
+      </li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;"><span class="winner">Transport</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color:rgba(255, 26, 26,1);border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;;min-width:166px;">
+          <li><a href="/transport/busdirectory" class="dropsize">BusDirectory</a></li>
+          <li><a href="/transport/rentals" class="dropsize" >Rentals</a></li>
+          <li><a href="/transport/autodirectory" class="dropsize">Auto Directory</a></li>
+
+        </ul>
+      </li>
+    </ul>
+    </div>
+    </nav>
+  <!--nav ka katham-->
+
+
+<div   >
+
+    <h1  style=" text-align: center ;text-decoration: underline  ;  text-shadow:2px 2px White; color:orange  ;   " > <b> <i> FACULTY OF CSE</i></b></h1>
+
+
+</div>
+<br>
+
+
+
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user02387/FacultyImage/FacImg4153cfda66cf41828ffd94304a38eddbEditedVMP.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Vandana Bhattacharjee   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD- JNU , M.Tech.(CS)- JNU and B.Tech(CSE), BIT Mesra  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Object Oriented Software Metrics/ Soft Computing Software Cost Estimation/ Process Models / Data Mining  </p>  <p class="card-text"> <b> Contact: </b>    0651-2275548  </p>  <p class="card-text"> <b> Email: </b>    vbhattacharya@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213113107751_aa83f7910ef2460aa50ea34c8e9e8eeb_Menu_634021745712656250F262.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sandip Dutta   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. (BIT Mesra)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Software Engineering, Computer Networking, Operating System  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    sandipdutta@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213112834585_da4950a6be194f2083e26c488ccd026a_Menu_634021745007187500F27.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. G. Sahoo   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. (IIT Kharagpur)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Theoretical Computer Science, Sequential & Parallel Computing, Soft & Evolutionary Computing, Pattern Recognition & Image Processing, Distributed & Grid Computing, Cryptography & Data Security  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    gsahoo@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213114810116_d65bedb704a64cedbb990ce3aea37ca3_Menu_634499468587988750_DrJain.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. (Mrs.) Aruna Jain   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. (B.I.T., Mesra), M.Tech. (Comp.Sc.), M.Sc. (Physics)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Computer Networks & Security, Data Mining, Soft Computing, Web Engineering  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    arunajain@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213115152579_b72c96880e0a4e57adc23a8e1dca6103_Menu_634021748365156250F100.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Vijay Kumar Jha   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D. Engg, M. Sc Engg., B. E.   </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Communication & Networks, Database Technologies  </p>  <p class="card-text"> <b> Contact: </b>    +91-9431345301  </p>  <p class="card-text"> <b> Email: </b>    vkjha@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213114927710_048e71c46f024b36bdc4a1da03aaea1f_Menu_634021714422812500F151.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Bhaskar Karn   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Fuzzy Logic, Information Retrieval System  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    bhaskar302001@yahoo.co.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213114505369_ff8bd4ef6e354cccbef0fd0888e47a33_Menu_634024552851406250F103.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. D. K. Mallick   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D., M.Tech.(Comp. Sc.), M.Sc. (Physics)   </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Data Structure and Algorithms, Operating Systems, Parallel Computing, Distributed System  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    dkmallick@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213151930723_3807bdc42ac04b0f8b4f358c9a0acc59_Menu_634024552120468750F179.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Abhijit Mustafi   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.,MCA  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Digital Image Processing, Machine Learning  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    abhijit@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213115654969_b3088ab39d484c03861e2f062659baf2_Menu_634163669451738280_DSC_1513_eddited.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. K.Sridhar Patnaik   </h4>
+<p class="card-text"> <b> Qualifications: </b> Ph.D, M.E., B.E.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Software Engineering  </p>  <p class="card-text"> <b> Contact: </b>    9431187489  </p>  <p class="card-text"> <b> Email: </b>    kspatnaik@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_krajnish/FacultyImage/FacImg28e674cf209645dda0863ba9a1699921_Rajnishnewphotoforinterview.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Kumar Rajnish   </h4>
+<p class="card-text"> <b> Qualifications: </b> Ph.D. (Engg) MCA  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Software Metrics  Software Engineering Database Metrics  and Cognitive Approach in Software Engineering  </p>  <p class="card-text"> <b> Contact: </b>    9546151005  </p>  <p class="card-text"> <b> Email: </b>    krajnish@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useramritanjali/FacultyImage/FacImg371ab06bc5a043a3a35d9d410175851eprofile%20pic.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Amritanjali   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.,ME (SE), BE(CS)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Computer Networks, Bioinformatics, Operating System and Parallel Computing  </p>  <p class="card-text"> <b> Contact: </b>    9430779843  </p>  <p class="card-text"> <b> Email: </b>    amritanjali@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_shamama/FacultyImage/FacImg_20160715122252788_c33f983ebb2e4eb0ae273e981bb07a5a_Shamama%20(1).jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Shamama Anwar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D, M.Tech (CS)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Image Processing, Data Structures, Artificial Intelligence  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    shamama@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in//Defaultimg/photo.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> B.K.Chanda   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.C.A  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Information Technology  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    chanda_Bidyut@yahoo.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userskchatterjee/FacultyImage/FacImgaf238d136bb14f829e110d37c12e6bf0FINAL%20NEET%20PNG.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Sujit Kumar Chatterjee   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Sc(Physics), MCA  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Machine Learning, Data Clustering Algorithms, Computer Graphics, Advanced Data Structures and Algorithm Design , OOAD, Computer Organization & Architecture, Data & Computer Network,System Programming.  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    bitskchatterjee@yahoo.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userRadhamadhab/FacultyImage/FacImgc2119058fee74c14851f739be804d87aCopy%20of%20photo.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Radhamadhab Dalai   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD(BIT Mesra Continuing), MTech(NIT Rourkela), BE(NIT Surathkal)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Vision based systems design,Machine learning  </p>  <p class="card-text"> <b> Contact: </b>    9766582174  </p>  <p class="card-text"> <b> Email: </b>    rdalai.teqip@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userhimanish/FacultyImage/FacImg84c6b8936c284e4698b7544d2bb4c02aIMG_20160503_143416_457-2.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Himanish Shekhar Das   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD(CSE) -  NIT Silchar (Pursuing), M.Tech(CSE) - NIT Durgapur, B.Tech(CSE) - NIT Silchar  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Speech Processing, Wireless Sensor Networks, Cloud Computing, Machine Learning  </p>  <p class="card-text"> <b> Contact: </b>    9435427610  </p>  <p class="card-text"> <b> Email: </b>    hdas.teqip@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_shrutigarg/FacultyImage/FacImg_20160728133327912_5f6fd576dd874a699b1f2d8ea5ee627c_profile.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Shruti Garg    </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.(Engineering)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Image Processing, Soft Computing, Analysis of Algorithms  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    gshruti_garg@yahoo.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userGaurav/FacultyImage/FacImg63d66a872ea94558bfc8d724e626d568GATE%20IISc_Final%20Photo.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Kumar Gaurav   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. (Pursuing), M.Tech. (NIT Patna), B.Tech.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Distributed Systems, Opinion Mining  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    kgaurav.teqip@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in//Defaultimg/photo.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Soni Gupta   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Machine Learning, Data Mining, Sentiment Analysis  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    26sonics@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmincse/FacultyImage/FacImgc7ccb7fbbc7b42509eae36693d50a781deoduttaishwar.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Deo Dutta Ishwar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.d Pursuing  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Multimedia, Software Engineering  </p>  <p class="card-text"> <b> Contact: </b>    9958573530  </p>  <p class="card-text"> <b> Email: </b>    devnitb@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213151300874_3e406ee0e07c495c9955d0ad0fd254bc_Menu_634021747633906250F178.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Ritesh Jha   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Sc.(CS)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Java related project, Artificial Neural Network, & Alogorithm Analysis,Data mining   </p>  <p class="card-text"> <b> Contact: </b>    9973110854  </p>  <p class="card-text"> <b> Email: </b>    riteshjha@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213152145564_c1252f35713a465ba4e04d18524a6ddb_Menu_634021746039687500F480.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Anup Kumar Keshri   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. (BIT Mesra), ME(Software Engg.), BE(CS)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Theory of Computation, Compiler Design, Parallel Computing, Soft Computing  </p>  <p class="card-text"> <b> Contact: </b>    9431596818  </p>  <p class="card-text"> <b> Email: </b>    anup_keshri@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userdhananjay_123/FacultyImage/FacImg9e61006fa38e47b3b7c85248d7ab0aadIMG_20181210_105711.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dhananjay Kumar   </h4>
+<p class="card-text"> <b> Qualifications: </b>B.Tech, M.Tech.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Theory of Computation, Compiler Design, Algorithm, Data Structure ,Operating System  </p>  <p class="card-text"> <b> Contact: </b>    7762925290  </p>  <p class="card-text"> <b> Email: </b>    dhananjaybit15@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150216114558334_60fd1f8b66d54f2ab6b82be0ec40dad8_Menu_634873040227605595_SubrajeetMohapatra_IT.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Subrajeet Mohapatra   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.(NIT Rourkela),M.Tech , B.E.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Image Processing, Pattern Recognition, Soft Computing, Cognitive Science  </p>  <p class="card-text"> <b> Contact: </b>    08809202074  </p>  <p class="card-text"> <b> Email: </b>    subrajeets@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213144144482_84b39032d65a46bcbdb5e877c670a12c_Menu_634024553147656250F143.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Indrajit Mukherjee   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Sc.(Spl. Electronics), MCA, M.Phil.(Comp. Sc.), Ph.D. (Comp. Sc.)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Compiler Design, Algorithm Design & Analysis,  Evolutionary Algorithms, Data Mining, Information Retrieval, Web Mining  </p>  <p class="card-text"> <b> Contact: </b>    9431182820  </p>  <p class="card-text"> <b> Email: </b>    imukherjee@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_akritinigam/FacultyImage/FacImg127f55aadcc945efa6c3ed1b4452e66f_IMG-20160805-WA0004.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Akriti Nigam   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. in IT (IIIT Allahabad, 2017), M.Tech. in IT (Human Computer Interaction) (IIIT Allahabad, 2011), B.Tech. in IT (UP Technical University, 2009)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Image Processing, Pattern Recognition, Machine Learning, Computer Vision, Information Retrieval, Audio processing and retrieval, Brain Computer Interface  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    akriti@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/usergkp1812/FacultyImage/FacImg83756e5062894609a06680188192a26dWhatsApp%20Image%202019-01-09%20at%201.42.34%20PM.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Gaurav Kumar Pandey   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech(MNNIT ALLAHABAD)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Computer Networks, Operating Systems, Algorithms, Principle of programming Languages  </p>  <p class="card-text"> <b> Contact: </b>    9305693136  </p>  <p class="card-text"> <b> Email: </b>    gaurav.pandey1812@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userparthapaul/FacultyImage/FacImg3642f6b1278e4c6aaaf1e7266813dcbbnew%20sir%20image.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Partha Paul   </h4>
+<p class="card-text"> <b> Qualifications: </b>BE (CSE), ME(CSE), Ph.D. (Engg)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Advanced DBMS, Advanced Networking, Software Design & Tesing.  </p>  <p class="card-text"> <b> Contact: </b>    9470370361  </p>  <p class="card-text"> <b> Email: </b>    p_india@rediffmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_sanchita/FacultyImage/FacImgd7103e6d62fd4bcba541bf5f4af7df4d_sanchita2.1.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sanchita Paul    </h4>
+<p class="card-text"> <b> Qualifications: </b>BE(CSE), ME(SE), PhD(Engineering)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Artificial Intelligence,  Parallel and Distributed Computing, Automata Theory, Design and analysis of Algorithms.  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    sanchita07@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_sabina/FacultyImage/FacImg_20160802152631243_843d23c2d7394061a2cb17b44d252a2f_20160701_211805.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sabina Pridarshini   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    ARTIFICIAL INTELLIGENCE, INTERNET NETWORK SECURITY, PROBLEM DOMAIN OF IT, DIGITAL IMAGE PROCESSING  </p>  <p class="card-text"> <b> Contact: </b>    9006108979  </p>  <p class="card-text"> <b> Email: </b>    sabinapriyadarshini@yahoo.co.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/usershashankpushkar/FacultyImage/FacImgb434000b3c044242a53fd4962f6a3c0020479608_10210456670676444_3194292170435561796_n.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Shashank Pushkar   </h4>
+<p class="card-text"> <b> Qualifications: </b> Ph.D.(Computer Applications, National Institute of Technology, Jamshedpur), MCA ( Assam Engineering College, Guwhati),MBA(SMU, Sikkim)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>     OptimizationTheory  and Applications,  Modern Optimization Heuristics  , SoftwareEngineering,  Software Project Management, Data mining  Techniques , Urban Computing  </p>  <p class="card-text"> <b> Contact: </b>    9470141130  </p>  <p class="card-text"> <b> Email: </b>    shashank@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_indra/FacultyImage/FacImgbf32a9b3ab6d41bfa399d240959141b3_Untitled.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Indra Deo Ram   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.E.-CSE (TIET Patiala),  B.E.-CSE (NIT Jamshedpur)   </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Computer Vision, Machine Learning, Soft Computing, Artificial Intelligence.  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    indradeo@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/usersujansaha/FacultyImage/FacImgbf23f15afe0b4fe98beca2421022af92my%20profile%20picture.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sujan Kumar Saha   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.(IIT Kharagpur, 2010), M.Tech (IIT Delhi, 2005), B.Tech (Kalyani Govt. Engg. College, 2003)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Natural Language Processing, Artificial Intelligence, Algorithms  </p>  <p class="card-text"> <b> Contact: </b>    Through email.  </p>  <p class="card-text"> <b> Email: </b>    sujan.kr.saha@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150216094609473_8de23c5671b647d7801326a2c11bbff5_Menu_634486481975020000_DSCN1407.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sudip Kumar Sahana   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. (Engineering), M.TECH.(Computer Science), BE(Computer Technology)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Artificial Intelligence, Soft  & Evolutionary Computing, System Programming, Grid Computing.  </p>  <p class="card-text"> <b> Contact: </b>    09470131644  </p>  <p class="card-text"> <b> Email: </b>    sudipsahana@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_kalyan/FacultyImage/FacImg_20160714115951730_fc73328424c14c989c83309926320bd4_kalyan%20photo.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Kalyan Samanta   </h4>
+<p class="card-text"> <b> Qualifications: </b>B.Tech, M.Tech  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Computer Graphics, Software Engineering  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    samantakalyan@yahoo.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150213120024815_c763047084ba4e36b0c8ef1704578880_Menu_634872899188422904_BikasKantiSakar_IT.JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Bikash Kanti Sarkar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. (Jadavpur Univ.-2013),  M.Phil(Comp. Sc.),  MCA (BESU-1999), M.Sc. (Maths. from IIT KGP-1993), [ UGC-NET(Comp. Sc.), GATE(CS)]  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Algorithm Design (Sequential & Parallel), Automata Th., Compiler Design, Coding Th.  </p>  <p class="card-text"> <b> Contact: </b>    9431382752  </p>  <p class="card-text"> <b> Email: </b>    bk_sarkarbit@hotmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150216093252200_ff9c72231b0444a09619d123f91d3b43_Menu_634024554117343750F443.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Kishore Kumar Senapati   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech(.CSE)-UTKAL, Ph.D(Engg)-BIT_MESRA  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Digital Forensic, Information Retrieval and Image Processing  </p>  <p class="card-text"> <b> Contact: </b>    9431768348  </p>  <p class="card-text"> <b> Email: </b>    kksenapati@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_neeraj/FacultyImage/FacImg9e2ad767b82d4242a1dffcaf5ebff0d1_Niraj_Pic_02.JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Niraj Kumar Singh   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D., Master of Engineering (Software Engineering), PGDIT (IIT Kharagpur), BE (CSE)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Data Structures, Design and Analysis of Algorithms, Formal Languages and Automata Theory  </p>  <p class="card-text"> <b> Contact: </b>    9308774101  </p>  <p class="card-text"> <b> Email: </b>    niraj_2027@yahoo.co.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_itusnigdh/FacultyImage/FacImg_20160714110520802_c3d00847597f43b18a56daeff528d876_IMG_20150902_125505_1.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Itu Snigdh   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.E., B.E., Ph.D  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Database management systems, Sensor Networks, IoT, Software Engineering  </p>  <p class="card-text"> <b> Contact: </b>    9431584043  </p>  <p class="card-text"> <b> Email: </b>    itusnigdh@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_sumitsrivastava/FacultyImage/FacImg8c244dfdf9a54ec793d806dab82cfde2_new%20fina1l.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Sumit Srivastava   </h4>
+<p class="card-text"> <b> Qualifications: </b>  B.Tech, M.Tech, Ph.D. (Pursuing),  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Computer Network, Information & Network Security, Computer Architecture, Speech Technology  </p>  <p class="card-text"> <b> Contact: </b>    +91-8986758348  </p>  <p class="card-text"> <b> Email: </b>    sumit@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_pratyush_869/FacultyImage/FacImg_20150216114836633_981934bfad86479c9cbf14cb847d9d9f_Menu_634878253251671574_D%20Mustafi_IT.JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> D. Mustafi   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.C.A.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Data Mining, Data Structure and Analysis of  Algorithm ,Web Programming and Web Technology  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    debjani.mustafi@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in//Defaultimg/photo.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Alok Baranwal   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Big Data, Machine learning  </p>  <p class="card-text"> <b> Contact: </b>    8171181981  </p>  <p class="card-text"> <b> Email: </b>    alokiitr2@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userNajima/FacultyImage/FacImg4d26b891fc69441f82f17bf4f57a32ebIMG_20180228_181948.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Najima Begum   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech (NIT Meghalaya), B.Tech (NIT- Silchar)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Datastructure, Algorithm, Machine Learning  </p>  <p class="card-text"> <b> Contact: </b>    9402794755  </p>  <p class="card-text"> <b> Email: </b>    najima.nits@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/usershishir/FacultyImage/FacImg15f30211b72242e3933cafc0eced92a920160901_143129_image.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Shishir Singh Chauhan   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    DBMS, Computer Organisation  </p>  <p class="card-text"> <b> Contact: </b>    7905307175  </p>  <p class="card-text"> <b> Email: </b>    shishirsingh913@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userMousumi/FacultyImage/FacImg09f514dd8cf746e4a8dbcb84558fc8e4MOUSUMI%20DHARA.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Mousumi Dhara   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Graph Data Mining  </p>  <p class="card-text"> <b> Contact: </b>    9598530618  </p>  <p class="card-text"> <b> Email: </b>    mousumi.dhara@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userkrantiingale/FacultyImage/FacImga8b26c886b4a4a86828c998adb05dd77IMAGE.JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Kranti Bhimrao Ingale   </h4>
+<p class="card-text"> <b> Qualifications: </b>MTech (IIT Kharagpur), BE (University of Pune),Diploma in CSE (Government Polytechinc)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Image Processing , Data structure and Algorithm   </p>  <p class="card-text"> <b> Contact: </b>    8983266869  </p>  <p class="card-text"> <b> Email: </b>    kranti02ingale@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userVinay/FacultyImage/FacImge04632ccd23245cf81f97dea4963bb00IMG_20161204_131954.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title">  V. Kumar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. , M.Tech.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Software Engineering  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    vk841232@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userAshish/FacultyImage/FacImgfe9a9b3d24be4c1cb6373c6cca7dea9aphoto.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Ashish Kumar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D (Pursuing), M.tech (IIT (ISM) Dhanbad)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Network Security, Cryptography, Internet of Things (IOT)  </p>  <p class="card-text"> <b> Contact: </b>    9525920876  </p>  <p class="card-text"> <b> Email: </b>    ashish.iitdhn@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userSurya/FacultyImage/FacImg2797f78f7f2047999da911cac7c65ce6Surya%20Narayan-min.JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Surya Narayan Mahapatra   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech(NIT,Rourkela), B.Tech(GIET,Gunupur)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Internet of Things(IOT),Network Security,Machine Learning,Computer Networks  </p>  <p class="card-text"> <b> Contact: </b>    7978076240  </p>  <p class="card-text"> <b> Email: </b>    smahapatra.teqip@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userArunangshu/FacultyImage/FacImg13128352fef84d1185811932a654102bWhatsApp%20Image%202018-02-13%20at%204.14.58%20PM.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Arunangshu Pal    </h4>
+<p class="card-text"> <b> Qualifications: </b>M.E   </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Bioinformatics,NLP,Compiler Design  </p>  <p class="card-text"> <b> Contact: </b>    8415966136  </p>  <p class="card-text"> <b> Email: </b>    palarunangshu@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/usersatya/FacultyImage/FacImge065cc5ac6fd4e5aaaa14551bce1f4c2satya%20resume%20pic.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Satya Prakash Patel   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD(Pursuing)-IIT Guwahati, M.Tech(IT)- University of Hyderabad  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Data Mining, Databases, Computer Networks and Network Security  </p>  <p class="card-text"> <b> Contact: </b>    8985765260  </p>  <p class="card-text"> <b> Email: </b>    satyapatel.ind@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userrosamma/FacultyImage/FacImgafae4b7859244fc186d1476fcb57a78011.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Rosamma K S   </h4>
+<p class="card-text"> <b> Qualifications: </b>MTech - Computer and Information Science  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Database Management Systems,Artificial Intelligence,Data Structures and Algorithms,Operating Systems,Discrete Mathematics  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    rosammaks18@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in//Defaultimg/photo.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Narayan Sharma   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech (Multimedia Information Processing)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Cognitive science, Theory Of Computation  </p>  <p class="card-text"> <b> Contact: </b>    8006747395  </p>  <p class="card-text"> <b> Email: </b>    narainsharma7@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/usermshrirame/FacultyImage/FacImg8204ea76e25d474a8a5721b50c84c372P_20160104_100100_1_BF_p.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Mayur Shrirame   </h4>
+<p class="card-text"> <b> Qualifications: </b>M. Tech (NIT, Goa)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Wireless Sensor Networks  </p>  <p class="card-text"> <b> Contact: </b>    8055479154  </p>  <p class="card-text"> <b> Email: </b>    mayurshrirame@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userDurgesh/FacultyImage/FacImg040d26ee8c3042b0b3299bd283b306bbDurgesh%20Singh.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Durgesh Singh   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.(IIT BHU), M.Tech. (MNNIT Allahabad), B.Tech. (CSJM University Kanpur)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Image Processing, Data Structures and Algorithms  </p>  <p class="card-text"> <b> Contact: </b>    9473929004  </p>  <p class="card-text"> <b> Email: </b>    durgeshcse@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userPranshu/FacultyImage/FacImgced332c4e662491a8b6370851a65e108Pranshu_New_f.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Pranshu Suraj    </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech CSE ( IIT (ISM) Dhanbad ), B.E CSE ( GHRCE,Nagpur )  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Data Science, Database Management System, Data Structure and Algorithms  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    psuraj.teqip@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userrashmirathi/FacultyImage/FacImgbcb74b3d68f04aa7b8041619b5220271IMG_7526.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Rashmi Rathi Upadhyay   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech (NIT Nagpur)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Machine Learning   </p>  <p class="card-text"> <b> Contact: </b>    7387456533  </p>  <p class="card-text"> <b> Email: </b>    rashmigate2014@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in//Defaultimg/photo.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Kshitiza Vasudeva   </h4>
+<p class="card-text"> <b> Qualifications: </b>MTech (Jaypee University)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Cloud computing, Big data  </p>  <p class="card-text"> <b> Contact: </b>    9736401176  </p>  <p class="card-text"> <b> Email: </b>    kshitizavasudena@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+
+
+
+
+
+<!--footer -->
+
+   <div class="footer">
+  	<div class="container" style="color:white">
+  		<div class="row">
+  			<div class="col-sm-4">
+  			<address style="color:white;font-size:15px;">
+  			<b><u>Contact BIT Campuses</u></b>
+  			<br>BIT Mesra Campus
+  			<br>Birla Institute of Technology, Mesra
+  			<br>Ranchi, Jharkhand 835215
+  			<br>PABX: +91 651 2275444/2275896
+  			<br>Fax: 0651 2275401
+  			</address>
+  			</div>
+  			<div class="col-sm-4">
+  				<ul style="list-style-type: none;font-size:17px;">
+  				<li><a href="http://erp.bitmesra.ac.in/iitmsv4eGq0RuNHb0G5WbhLmTKLmTO7YBcJ4RHuXxCNPvuIw=?enc=EGbCGWnlHNJ/WdgJnKH8DA==" ><span class="dot"></span>ERP</a><li>
+  				<li><a href="/home"><span class="dot"></span>HOME</a><li>
+            <li><a href="http://115.114.127.54:8080/psp/bitcsprd/EMPLOYEE/HRMS/c/B_STDNT_SLF.B_SEM_CRSE_MAP.GBL?PORTALPARAM_PTCNAV=BIT_STDNT_REGISTRATION&EOPP.SCNode=HRMS&EOPP.SCPortal=EMPLOYEE&EOPP.SCName=CO_EMPLOYEE_SELF_SERVICE&EOPP.SCLabel=Self%2520Service&EOPP.SCPTfname=CO_EMPLOYEE_SELF_SERVICE&FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.BIT_STDNT_REGISTRATION&IsFolder=false&cmd=login&languageCd=ENG" style="margin-left:31	px;"><span class="dot"></span>Old ERP</a><li>
+  				</ul>
+  			</div>
+  			<div class="col-sm-4">
+  				<ul style="list-style-type: none;font-size:17px;float:left;">
+  				<li><a href="http://placement.bitmesra.ac.in/" style="margin-left:14px;"><span class="dot"></span>Placement Portal</a><li>
+  				<li><a href="https://www.bitmesra.ac.in/UploadedDocuments/adminpoly/files/List%20of%20Holidays.pdf"><span class="dot"></span>List of holidays</a><li>
+  				<li><a href="https://www.bitmesra.ac.in/Show_Content_Section?cid=1&pid=285"><span class="dot"></span>TELEPHONE DIRECTORY</a><li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+   </div>
+  <!--footer ends-->
+
+ </body></html>

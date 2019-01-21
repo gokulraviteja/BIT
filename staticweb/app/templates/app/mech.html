@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MECHANICAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+ body{
+ background-color:lavender;
+ }
+#heading{
+position:relative;
+color:red;
+font-size:45px;
+margin-left:17px;
+text-shadow:2px 2px White;
+text-align:center;
+font-family:Comic Sans, Comic Sans MS, cursive;
+margin-top:100px;
+
+}
+.winner{
+	font-size:20px;
+	margin:5px;
+	padding:0px 14px 0px 14px;
+
+}
+
+.dropsize{
+	font-size:16px;
+}
+.dropsize:hover{
+ color:red;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 100%;
+  }
+
+.footer{
+	position: relative;
+	clear: both;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgba(75,75,75,0.8);
+   color: white;
+   text-align: center;
+   min-height:100px;
+
+	}
+#myCarousel{
+width:600px;
+height:400px;
+box-shadow:2px 2px 7px #FF0000;
+
+}
+.navbar{
+background-color:rgba(75,75,75,0.8);
+border-color:rgba(75,75,75,0.8);
+}
+
+
+
+li{
+margin-top:30px;
+padding:0px;
+margin-left:0px;
+height:100%;
+}
+address{
+margin-top:30px;
+}
+
+
+
+
+.footer a{
+color:white;
+}
+.footer a:hover{
+color:red;
+}
+#headhe{
+margin-left:0px;
+height
+}
+blockquote{
+
+width:1200px;}
+
+<!--navbar right ka hai
+.navbar-inverse .navbar-nav >li:hover{
+background:red;
+}
+
+.navbar-inverse .navbar-nav >li>a{
+color:red;
+}
+
+{
+  background:red;
+  color:lavenderblush;
+
+}-->
+.navbar-inverse a{
+color:white;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:onclick{
+  background-color:black;
+  color:white;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+color:white;
+background-color:red;
+}
+
+#admin:hover{
+background-color:black;
+}
+.footer a{
+text-decoration:none;
+}
+.footer li{
+margin:25px;
+}
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color:white;
+  margin:0px 7px 3px 0px;
+  border-radius: 50%;
+  display: inline-block;
+}
+  </style>
+
+  </head>
+<body>
+
+   <!--Navbar ka hai-->
+    <nav class="navbar navbar-inverse" style="height:100px;">
+    <div class="container-fluid" id="headhe">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="padding:0px;margin:6px" href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Birla_Institute_of_Technology_Mesra.svg/220px-Birla_Institute_of_Technology_Mesra.svg.png" style="height:90px;padding:0px;margin:0px"/></a>
+
+    </div>
+
+    <br><a href="#"  id="heading">BIT Directory</a>
+    <ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+      <li><a href="/Administration" id="admin" class="winner" style="margin:-2px 0px 2px 2px;color:white;">Administration</a></li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;"><span class="winner">Faculty</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color: #FF0000;min-width:146.5px;border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+          <li><a href="/faculty/cse" class="dropsize" >cse</a></li>
+          <li><a href="/faculty/ece" class="dropsize">ece</a></li>
+          <li><a href="/faculty/eee" class="dropsize">eee</a></li>
+          <li><a href="/faculty/mech" class="dropsize">mech</a></li>
+          <li><a href="/faculty/civil" class="dropsize">civil</a></li>
+          <li><a href="/faculty/prod" class="dropsize">prod</a></li>
+          <li><a href="/faculty/bio" class="dropsize">bio tech</a></li>
+          <li><a href="/faculty/chemeng" class="dropsize">Chem Eng</a></li>
+          <li><a href="/faculty/chem" class="dropsize">Chemistry</a></li>
+          <li><a href="/faculty/arch" class="dropsize">Architecture</a></li>
+          <li><a href="/faculty/mat" class="dropsize">Maths</a></li>
+          <li><a href="/faculty/phy" class="dropsize">Physics</a></li>
+
+          <li><a href="/faculty/hotel" class="dropsize">Hotel Mana..</a></li>
+          <li><a href="/faculty/manage" class="dropsize">Management</a></li>
+          <li><a href="/faculty/space" class="dropsize">Space Eng</a></li>
+          <li><a href="/faculty/remote" class="dropsize">Remote sensing</a></li>
+          <li><a href="/faculty/pharm" class="dropsize">Pharmaceutical</a></li>
+
+
+
+        </ul>
+      </li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;;"><span class="winner">Shops</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color: #FF0000;min-width:139px;border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+          <li><a href="/shops/canteens" class="dropsize" >Canteens</a></li>
+          <li><a href="/shops/stationary" class="dropsize">Stationary</a></li>
+          <li><a href="/shops/tailor" class="dropsize">Tailor</a></li>
+        </ul>
+      </li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;"><span class="winner">Transport</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color:rgba(255, 26, 26,1);border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;;min-width:166px;">
+          <li><a href="/transport/busdirectory" class="dropsize">BusDirectory</a></li>
+          <li><a href="/transport/rentals" class="dropsize" >Rentals</a></li>
+          <li><a href="/transport/autodirectory" class="dropsize">Auto Directory</a></li>
+
+        </ul>
+      </li>
+    </ul>
+    </div>
+    </nav>
+  <!--nav ka katham-->
+
+
+<div   >
+
+    <h1  style=" text-align: center ;text-decoration: underline  ;  text-shadow:2px 2px White; color:orange  ;   " > <b> <i> FACULTY OF MECHANICAL</i></b></h1>
+
+
+</div>
+<br>
+
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImgc89a8e53030342e69e09f2cc6ed827a3rps-hodmech.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. R. P. Sharma   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.E.(Mech), M.Tech.(Comp. Sc.), Ph.D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Computational Heat Transfer, Non-conventional energy, CAD  </p>  <p class="card-text"> <b> Contact: </b>    9430703061  </p>  <p class="card-text"> <b> Email: </b>    hodmech@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153323191_1867faa1b1bd4a868e4cb2008e5b7682_Dipti.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Dipti Prasad Mishra   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Heat Power Engineering, Fluid Mechanics, CFD  </p>  <p class="card-text"> <b> Contact: </b>    7250582643  </p>  <p class="card-text"> <b> Email: </b>    dpmishra@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153356200_bb4cab691eb641a2a1fc423ccfaacc48_Kaushik.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Kaushik Kumar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    CAD, CAM, Virtual Manufacturing, Composites, Optimization  </p>  <p class="card-text"> <b> Contact: </b>    9431597463  </p>  <p class="card-text"> <b> Email: </b>    kkumar@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153451175_53047edfb0f043f8a0f8888bf595e266_Rajeev.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Rajeev Kumar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Thermodynamics, Material Science  </p>  <p class="card-text"> <b> Contact: </b>    9431382591  </p>  <p class="card-text"> <b> Email: </b>     rajeevkumar@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705152906389_0925497be1ff4229b143047039a5211c_ApurbaRoy.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Apurba Kumar Roy   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Fluid Mechanics, Mutiphase Flow, CFD, Turbo Machines  </p>  <p class="card-text"> <b> Contact: </b>    8987479525  </p>  <p class="card-text"> <b> Email: </b>    akroy@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImga9c65cf1e3f84998a59fbdd0581e15a6anuj.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Anuj Bajpai   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D. (IIT Kanpur)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Computational Fluid Dynamics  </p>  <p class="card-text"> <b> Contact: </b>    8707283571  </p>  <p class="card-text"> <b> Email: </b>    anuj2901@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705155203804_ed2bb19e0b6a40199cacb87a2610104d_SBhaduri.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sankha Bhaduri   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D. (Jadavpur University)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Solid Mechanics  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    sbhaduri@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImg313d737cafa347b5bd5667d002d3b6eclakhbir.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Lakhbir Singh Brar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Fluid Mechanics, Swirling Flows, Optimization Techniques  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    lakhbir.bitmesra@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153635317_9c2c151157e24956bb61c9ba51ba064c_Dhiman.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sushil Kumar Dhiman   </h4>
+<p class="card-text"> <b> Qualifications: </b>B.E.(Mechanical Engg.), M.Tech.(Thermal Engg.), Ph.D.(Engineering)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Thermal Engineering, Fluid Dynamics  </p>  <p class="card-text"> <b> Contact: </b>    +91 9430734803  </p>  <p class="card-text"> <b> Email: </b>    skdhiman@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImgdca1fe08b1674810a3d903f07eea5c15nirmal.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Nirmal Kumar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Inflation mechanics, dynamics and internal dissipation of soft materials subjected to large deformations  </p>  <p class="card-text"> <b> Contact: </b>    9693838996  </p>  <p class="card-text"> <b> Email: </b>    nirmal.mit@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImg0be6a7c93b3e459e8c271da303d5d6daratnesh.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Ratnesh Kumar   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D., IIT (ISM) Dhanbad  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Manufacturing Engineering and Welding  </p>  <p class="card-text"> <b> Contact: </b>    7549023950  </p>  <p class="card-text"> <b> Email: </b>    ratan_876@yahoo.co.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImg4bf29ca7227345419d11561ee30ff805rajan.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Rajan D. Lanjekar   </h4>
+<p class="card-text"> <b> Qualifications: </b>M. Tech (IIT Bombay)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Thermal and Fluid Engineering  </p>  <p class="card-text"> <b> Contact: </b>    9630340388  </p>  <p class="card-text"> <b> Email: </b>    ldeorao.teqip@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_paritosh/FacultyImage/FacImg_20160713100525634_3ee926fa1d26434dad2a595a52e32284_Paritosh.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Paritosh Mahata   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D. (IIT Kanpur)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Solid Mechanics and Design  </p>  <p class="card-text"> <b> Contact: </b>    +91 7607487861  </p>  <p class="card-text"> <b> Email: </b>    pmahata@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153224335_00306802b9cf4b2cabffa9cd9b52a554_Mahato.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Dhaneshwar Mahto   </h4>
+<p class="card-text"> <b> Qualifications: </b>B.E (BIT, Mesra) M.E.(BIT Mesra) Ph. D.( SHIATS, Allahabad)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Heat Power Conversion, Waste Energy Utilization,Refrigeration and Air Conditioning and Non Conventional Energy  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    dmahto@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153618073_bef9bd30698f4ae990be2584178e2a28_Sujeet.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Sujeet Kumar Mishra   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.E., Ph. D. (Submitted)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Design, Fracture of metals, Materials  </p>  <p class="card-text"> <b> Contact: </b>    08709148515  </p>  <p class="card-text"> <b> Email: </b>    sujeetmishra@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153430367_2869fc252ba54035bf12229333082876_Praveen.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Praveen Mishra   </h4>
+<p class="card-text"> <b> Qualifications: </b>BE(Mechanical), M.Tech (CIDM),Ph.D.(Mechanical) ,PGDM (IIM-Ranchi)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    ,Process Modelling, Continuous Casting, Fluid Mechanics, Non Conventional Energy  </p>  <p class="card-text"> <b> Contact: </b>    9431327060  </p>  <p class="card-text"> <b> Email: </b>    pmishra@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImg86d83ef3fe134d26a37be2acec5535ceinayath.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Prof. Inayath N.    </h4>
+<p class="card-text"> <b> Qualifications: </b>M. S (IIT Madras)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Fluid Mechanics and Heat Transfer  </p>  <p class="card-text"> <b> Contact: </b>    8075124012  </p>  <p class="card-text"> <b> Email: </b>    inayathn2006@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705152710621_0fe6aea155e94772bd2ea41ce61ce044_Nag.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Abhijit Nag   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD (IIT Kgp)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Design of Machine Elelment, Fluid Power  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    abhijitnag@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153413348_65f6d93fcf204741bd989158f59e5ce2_OPPandey.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> OM PRAKASH PANDEY   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.E., Ph. D. (Submitted)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Design of Process Equipments  </p>  <p class="card-text"> <b> Contact: </b>    9431382592  </p>  <p class="card-text"> <b> Email: </b>    oppandey28@yahoo.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153510694_74db98e835ff4a4a8d2e8d4efb58e61d_Richa.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Richa Pandey    </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Mechatronics, CAD/CAM,Reverse Engineering, Biomedical Engineering  </p>  <p class="card-text"> <b> Contact: </b>    9431106297  </p>  <p class="card-text"> <b> Email: </b>    richapandey@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImg676979fb5d8e4d87b86990a3b17e2211chandrahas.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Chandrahas Patel   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D. (IIT Guwahati)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Computer Assisted Manufacturing  </p>  <p class="card-text"> <b> Contact: </b>    9957665893  </p>  <p class="card-text"> <b> Email: </b>    chandrahaspatel@outlook.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705155514023_8b7feea8eb1641b787dab544a7f83886_Omprakash.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Om Prakash   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Solar Thermal Applications, Wind Energy, and Heat Transfer  </p>  <p class="card-text"> <b> Contact: </b>    9546219256  </p>  <p class="card-text"> <b> Email: </b>    omprakash@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImg8c3b6fb8bd304e33881aacec36994741Shazee_photo.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Prof. Shazee Rahmani   </h4>
+<p class="card-text"> <b> Qualifications: </b>M. Tech (IIT Guwahati)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Aerodynamics and Propulsion  </p>  <p class="card-text"> <b> Contact: </b>    8789940180  </p>  <p class="card-text"> <b> Email: </b>    shazi.rahmani@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImg0523354f23bf44519bb33f71993aaf45faisal.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Faisal Rahmani   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D. (IIT Delhi), M. Tech. (IIT Delhi)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Bearing tribology, Mechanical vibrations  </p>  <p class="card-text"> <b> Contact: </b>    8294567477  </p>  <p class="card-text"> <b> Email: </b>    faisalrahmani@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImgc2fcb09256b34d28837e4576101ec2b2pranith.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Prof. Pranith Kumar Reddy   </h4>
+<p class="card-text"> <b> Qualifications: </b>M. Tech (NIT Surathkal)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Manufacturing Engineering  </p>  <p class="card-text"> <b> Contact: </b>    9998809151  </p>  <p class="card-text"> <b> Email: </b>    pranith.kumar02@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/usershalin/FacultyImage/FacImg3f5be6c08e874889a8413d4710bb212cshalin-mech.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Prof. Shalin   </h4>
+<p class="card-text"> <b> Qualifications: </b>M. Tech (IIT BHU)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Thermal and Fluid Engineering  </p>  <p class="card-text"> <b> Contact: </b>    9535618587  </p>  <p class="card-text"> <b> Email: </b>    shalinshubham@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/usermukesh/FacultyImage/FacImg198692349ed6498da69e54ddd679eb7217554118_1306278572792085_3565463156089694999_n.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Mukesh Sharma   </h4>
+<p class="card-text"> <b> Qualifications: </b>M. Tech (IIT Kharagpur), PhD (IIT Roorkee)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Thermal Engineering  </p>  <p class="card-text"> <b> Contact: </b>    8755330355  </p>  <p class="card-text"> <b> Email: </b>    mukesh7684.iitkgp@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_adminmech/FacultyImage/FacImg_20160705153019727_255dc67ab368455f9381a727397ed5ea_Arun.jpeg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Arun Dayal Udai    </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph. D. (IIT Delhi)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Robotics, Mechatronics and CAD  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    arun_udai@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in//Defaultimg/photo.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Shri Randeep Agarwal   </h4>
+<p class="card-text"> <b> Qualifications: </b>PGDBM  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Modeling and Simulation, Engineering Thermodynamics, Thermal Engineering, Energy Engineering  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    randeep@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradminmech/FacultyImage/FacImg94e42fd311894d98b1b18ba0b6cad2c3Pawan_Kumar_Bhageria.PNG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Shri Pawan Kumar Bhageria   </h4>
+<p class="card-text"> <b> Qualifications: </b>MBA - Finance (XLRI, Jamshedpur)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Mechanical Engineering, Administration, Finance  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    pawan.bhageria@tatatechnologies.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+
+
+
+
+
+
+
+<!--footer -->
+
+   <div class="footer">
+  	<div class="container" style="color:white">
+  		<div class="row">
+  			<div class="col-sm-4">
+  			<address style="color:white;font-size:15px;">
+  			<b><u>Contact BIT Campuses</u></b>
+  			<br>BIT Mesra Campus
+  			<br>Birla Institute of Technology, Mesra
+  			<br>Ranchi, Jharkhand 835215
+  			<br>PABX: +91 651 2275444/2275896
+  			<br>Fax: 0651 2275401
+  			</address>
+  			</div>
+  			<div class="col-sm-4">
+  				<ul style="list-style-type: none;font-size:17px;">
+  				<li><a href="http://erp.bitmesra.ac.in/iitmsv4eGq0RuNHb0G5WbhLmTKLmTO7YBcJ4RHuXxCNPvuIw=?enc=EGbCGWnlHNJ/WdgJnKH8DA==" ><span class="dot"></span>ERP</a><li>
+  				<li><a href="/home"><span class="dot"></span>HOME</a><li>
+            <li><a href="http://115.114.127.54:8080/psp/bitcsprd/EMPLOYEE/HRMS/c/B_STDNT_SLF.B_SEM_CRSE_MAP.GBL?PORTALPARAM_PTCNAV=BIT_STDNT_REGISTRATION&EOPP.SCNode=HRMS&EOPP.SCPortal=EMPLOYEE&EOPP.SCName=CO_EMPLOYEE_SELF_SERVICE&EOPP.SCLabel=Self%2520Service&EOPP.SCPTfname=CO_EMPLOYEE_SELF_SERVICE&FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.BIT_STDNT_REGISTRATION&IsFolder=false&cmd=login&languageCd=ENG" style="margin-left:31	px;"><span class="dot"></span>Old ERP</a><li>
+  				</ul>
+  			</div>
+  			<div class="col-sm-4">
+  				<ul style="list-style-type: none;font-size:17px;float:left;">
+  				<li><a href="http://placement.bitmesra.ac.in/" style="margin-left:14px;"><span class="dot"></span>Placement Portal</a><li>
+  				<li><a href="https://www.bitmesra.ac.in/UploadedDocuments/adminpoly/files/List%20of%20Holidays.pdf"><span class="dot"></span>List of holidays</a><li>
+  				<li><a href="https://www.bitmesra.ac.in/Show_Content_Section?cid=1&pid=285"><span class="dot"></span>TELEPHONE DIRECTORY</a><li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+   </div>
+  <!--footer ends-->
+
+ </body></html>

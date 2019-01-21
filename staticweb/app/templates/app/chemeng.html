@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>CHEM ENG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+ body{
+ background-color:lavender;
+ }
+#heading{
+position:relative;
+color:red;
+font-size:45px;
+margin-left:17px;
+text-shadow:2px 2px White;
+text-align:center;
+font-family:Comic Sans, Comic Sans MS, cursive;
+margin-top:100px;
+
+}
+.winner{
+	font-size:20px;
+	margin:5px;
+	padding:0px 14px 0px 14px;
+
+}
+
+.dropsize{
+	font-size:16px;
+}
+.dropsize:hover{
+ color:red;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 100%;
+  }
+
+.footer{
+	position: relative;
+	clear: both;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgba(75,75,75,0.8);
+   color: white;
+   text-align: center;
+   min-height:100px;
+
+	}
+#myCarousel{
+width:600px;
+height:400px;
+box-shadow:2px 2px 7px #FF0000;
+
+}
+.navbar{
+background-color:rgba(75,75,75,0.8);
+border-color:rgba(75,75,75,0.8);
+}
+
+
+
+li{
+margin-top:30px;
+padding:0px;
+margin-left:0px;
+height:100%;
+}
+address{
+margin-top:30px;
+}
+
+
+
+
+.footer a{
+color:white;
+}
+.footer a:hover{
+color:red;
+}
+#headhe{
+margin-left:0px;
+height
+}
+blockquote{
+
+width:1200px;}
+
+<!--navbar right ka hai
+.navbar-inverse .navbar-nav >li:hover{
+background:red;
+}
+
+.navbar-inverse .navbar-nav >li>a{
+color:red;
+}
+
+{
+  background:red;
+  color:lavenderblush;
+
+}-->
+.navbar-inverse a{
+color:white;
+}
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:onclick{
+  background-color:black;
+  color:white;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+color:white;
+background-color:red;
+}
+
+#admin:hover{
+background-color:black;
+}
+.footer a{
+text-decoration:none;
+}
+.footer li{
+margin:25px;
+}
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color:white;
+  margin:0px 7px 3px 0px;
+  border-radius: 50%;
+  display: inline-block;
+}
+  </style>
+
+  </head>
+<body>
+
+   <!--Navbar ka hai-->
+    <nav class="navbar navbar-inverse" style="height:100px;">
+    <div class="container-fluid" id="headhe">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="padding:0px;margin:6px" href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Birla_Institute_of_Technology_Mesra.svg/220px-Birla_Institute_of_Technology_Mesra.svg.png" style="height:90px;padding:0px;margin:0px"/></a>
+
+    </div>
+
+    <br><a href="#"  id="heading">BIT Directory</a>
+    <ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+      <li><a href="/Administration" id="admin" class="winner" style="margin:-2px 0px 2px 2px;color:white;">Administration</a></li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;"><span class="winner">Faculty</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color: #FF0000;min-width:146.5px;border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+          <li><a href="/faculty/cse" class="dropsize" >cse</a></li>
+          <li><a href="/faculty/ece" class="dropsize">ece</a></li>
+          <li><a href="/faculty/eee" class="dropsize">eee</a></li>
+          <li><a href="/faculty/mech" class="dropsize">mech</a></li>
+          <li><a href="/faculty/civil" class="dropsize">civil</a></li>
+          <li><a href="/faculty/prod" class="dropsize">prod</a></li>
+          <li><a href="/faculty/bio" class="dropsize">bio tech</a></li>
+          <li><a href="/faculty/chemeng" class="dropsize">Chem Eng</a></li>
+          <li><a href="/faculty/chem" class="dropsize">Chemistry</a></li>
+          <li><a href="/faculty/arch" class="dropsize">Architecture</a></li>
+          <li><a href="/faculty/mat" class="dropsize">Maths</a></li>
+          <li><a href="/faculty/phy" class="dropsize">Physics</a></li>
+
+          <li><a href="/faculty/hotel" class="dropsize">Hotel Mana..</a></li>
+          <li><a href="/faculty/manage" class="dropsize">Management</a></li>
+          <li><a href="/faculty/space" class="dropsize">Space Eng</a></li>
+          <li><a href="/faculty/remote" class="dropsize">Remote sensing</a></li>
+          <li><a href="/faculty/pharm" class="dropsize">Pharmaceutical</a></li>
+
+
+
+        </ul>
+      </li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;;"><span class="winner">Shops</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color: #FF0000;min-width:139px;border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+          <li><a href="/shops/canteens" class="dropsize" >Canteens</a></li>
+          <li><a href="/shops/stationary" class="dropsize">Stationary</a></li>
+          <li><a href="/shops/tailor" class="dropsize">Tailor</a></li>
+        </ul>
+      </li>
+      <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top:-3px;height:100%;color:white;"><span class="winner">Transport</span>
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" style="background-color:rgba(255, 26, 26,1);border-color:green;border-bottom-left-radius:10px;border-bottom-right-radius:10px;;min-width:166px;">
+          <li><a href="/transport/busdirectory" class="dropsize">BusDirectory</a></li>
+          <li><a href="/transport/rentals" class="dropsize" >Rentals</a></li>
+          <li><a href="/transport/autodirectory" class="dropsize">Auto Directory</a></li>
+
+        </ul>
+      </li>
+    </ul>
+    </div>
+    </nav>
+  <!--nav ka katham-->
+
+
+<div   >
+
+    <h1  style=" text-align: center ;text-decoration: underline  ;  text-shadow:2px 2px White; color:orange  ;   " > <b> <i> FACULTY OF Chemical Engineering</i></b></h1>
+
+
+</div>
+<br>
+
+
+
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userGautam/FacultyImage/FacImg698e510946bb46648ff6c38f8c40118fUntitled.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Gautam Sarkhel (Reg. Faculty DOJ 13/1/2001)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD(Chemical Engineering, Jadavpur University), M.Tech.(Polymer Science and Technology, IIT, Delhi), B.Tech.(Polymer Science and Technology, Calcutta University)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Polymer Blends & Composites, Membrane Science and Technology, Fuel Cell Technology, Natural Resin Based Surface Coating, Thermoplastic Elastomer, Ionomer based Polymer, Nano-composite  </p>  <p class="card-text"> <b> Contact: </b>    09431382629  </p>  <p class="card-text"> <b> Email: </b>    gautamsarkhel@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImga9daf50695e14c1c88d0e06113ebf31cMANDIRA%20MAM%20(1).JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Mandira Mukherjee (Reg. Faculty DOJ 1/4/1980)   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D (Chemical Engineering) I.I.T. Kharagpur, M.Sc. (Engg) (Space Eng. & Rocketry) B.I.T Mesra, B.Tech (Hons) (Chemical Engineering) I.I.T Kharagpur.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Polymer Processing and Rheology, Mass Transfer, Simulation, CAE  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    mmukherjee@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg0b7c46d47f2f4ac69ceaf3410058b4eeSUDIPTA%20%20MAM%201.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sudipta Goswami (Reg. Faculty DOJ 10/4/2006)   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D (Polymer Sc. & Tech) Calcutta University, M.Tech( Polymer Science & Technology) IIT Delhi, B.Tech. (Plastic and Rubber Tech) Calcutta University, B.Sc (Hons in chemistry) Calcutta university  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Specialty Polymer ( Synthesis & characterization ), Polymer Blends and IPNs , Composites and Polymers for Biomedical application.  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    sdptgoswami@bitmesra.ac.in, chemical@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg41e3d879a79347fdacd390de9a532d61SEN%20SIR%202.JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Akhil Kumar Sen (Reg. Faculty DOJ 2/8/2004)   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D( Chemical Engineering) IIT Bombay, M.Tech.(Materials Science) IIT Kharagpur, M.Sc (Chemistry) IIT Kharagpur  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Specialty Polymer synthesis & characterization, Nanotechnology, Colloid & Interface Science, Surface Coating & Adhesion  </p>  <p class="card-text"> <b> Contact: </b>    9431597273  </p>  <p class="card-text"> <b> Email: </b>    akhilsen@yahoo.co.in, akhilsen@rediffmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImgac35b4962fd140f4ba0d35945839758fARUP%20SIR.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Arup Chaudhury (Reg. Faculty DOJ 1/4/2007)   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. Birla Institute of Technology Mesra, M.Sc. Visva Bharti Univ., B.Sc. Burdwan Univ., Post doctoral: Kyugpook Nantional Univ., South Korea (2011-12), University of Texas at Dallas. USA (2012-13)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Nanotechnology, Polymer blends & composites, Recycling of plastic waste  </p>  <p class="card-text"> <b> Contact: </b>    9973277473  </p>  <p class="card-text"> <b> Email: </b>    arup@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_admince/FacultyImage/FacImg_20150730150955233_634e4ab5364b4547b7c69e5bad2eb2ad_SJ.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sumit K. Jana (Reg. Faculty DOJ 1/7/2008)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD(Chemical Engineering) Calcutta University, M.Tech, (Chemical Engineering) Calcutta University, B.Tech(Chemical Engineering) Calcutta University, B.Sc (Chemistry Hons) Calcutta University  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Chemical Process Industries, Petro-Chemical Engg, Fuel, Fluid Mechanics, Mechanical operation, Mass transfer.  </p>  <p class="card-text"> <b> Contact: </b>    +91-9470522790  </p>  <p class="card-text"> <b> Email: </b>    sumitkrjana@bitmesra.ac.in,sumitkrjana@yahoo.co.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImgaf48a6f3bbe243fbaa6c85e98905a8bapulak%20sir.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Pulak Datta (Reg. Faculty DOJ 15/09/2009)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD (Chemical Engineering, Jadavpur University), M.Tech (Polymer Sc& Tech, IIT Delhi), B.Tech (Polymer Sc.& Tech, Calcutta University), B. Sc (Chemistry Hons, Calcutta University)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Polymer Rheology, Polymer Processing, Blends & Alloys, Nanocomposites   </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    mailtopulakdatta@gmail.com, pulakdatta@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImga5ca33b8dae64d7ab32be8bdcea92431IMG_5338.JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Arnab Karmakar (Reg. Faculty DOJ 16/2/15)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD(Chemical Engineering, NIT Durgapur), M.E (Chemical Engineering, Jadavpur University), B.Tech. (Chemical Engineering, Haldia Institute of Technology, VU)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Process modeling and simulation-nonlinear systems, signal processing  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    arnabkarmakar@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImga9e98fd82ed74c28acae8ab6e5b57a7aGTM%20SIR.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. G.T. Mohanraj (Reg. Faculty DOJ 16/8/2011)   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D (IIT Kharagpur), M.Tech (Polymer Sc. & Tech.) IIT Delhi, B.Tech. (Chem. Engg.) University of Madras, PDF Italy(2006-2008),South Korea (2008-2009), South Korea (2009), France (2009-2011) (  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Polymeric sensors (vapor/temp.); sensor arrays & e-nose; actuators; Organic bistable memory device/Field Effect Transistors/Light emitting devices; conducting polymer synthesis; electrical & electronic characterization; EMI Shielding; S-parameter & complex permittivity; Nanofabrication; MEMS/NEMS; 1D/2D polymeric materials; Dielectric & Impedance spectroscopy; stimuli responsive and smart polymers; Nanocomposites, Electrochemical synthesis;Polymer processing and characterization  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    gtmohanraj@yahoo.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg90856cce9f9f404182afb902ad2185d0000.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Mr. G RAVI KUMAR (TEQIP Faculty DOJ 18/1/2018)   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.Tech (IIT Madras), B.Tech. (JNTUA Anantapuramu)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Heat Transfer, Mechanical Operations  </p>  <p class="card-text"> <b> Contact: </b>    8074889331, 97909098  </p>  <p class="card-text"> <b> Email: </b>    ravigvemula@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useramit_tiwary/FacultyImage/FacImgb2054668322545bbb75e4ae8ced7d46cA21.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Amit Kumar Tiwari (Reg. Faculty DOJ 18/5/17)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD (Biotechnology) B. I. T. Mesra, Ranchi, Jharkhand PG/M. Sc. (Fruit and Veg. Technology) Kanpur University B. Sc (Agriculture) Kanpur University  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Food Product Development Food Processing & Food Preservation Food Packaging and quality control  </p>  <p class="card-text"> <b> Contact: </b>    9955121140  </p>  <p class="card-text"> <b> Email: </b>    amit_tiwari20@yahoo.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useranupamroy/FacultyImage/FacImg12eba2b44e164cc98fdde98e6c3a4fafDSC_0400-1%20(1).JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Anupam Roy (Reg. Faculty DOJ 18/7/2016)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD(Food Engineering, IIT Kharagpur), M.Tech.(Chemical Engineering),B.Tech.(Food Technology).  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Nanotechnology  </p>  <p class="card-text"> <b> Contact: </b>    9734461153  </p>  <p class="card-text"> <b> Email: </b>    anupamroypaper@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/userbcruidas/FacultyImage/FacImg33d1bba5a595487c84df5a22439686eeIMG-20160921-WA0003.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Bidhan C. Ruidas (Reg. Faculty DOJ 2/3/2015)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD (Chemical Engineering, IIT Kharagpur), M.Tech. (Chemical Engineering, University of Calcutta), B.Tech. (Chemical Engineering, University of Calcutta), B.Sc. (Chemistry, University of Calcutta)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Recent advances in petroleum technology, natural gas utilization, combustion technology, membrane separation, CO2 sequestration  </p>  <p class="card-text"> <b> Contact: </b>    7589216760  </p>  <p class="card-text"> <b> Email: </b>    bidhanruidas@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg8a040c95201a43edb66bde33804b473dDSC_0055%20(2).JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Amarnath Mishra (Reg. Faculty DOJ 21/1/2009)   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D (Polymer Science and Technology) Jai Prakash University Chapra, M.Sc. (Inorganic Chemistry), Ranchi University Ranchi, B.Sc. (Chemistry), Ranchi University, Ranchi.  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Polymer, Water Pollution and Food Technology  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    Amar.mishra20@yahoo.co.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImgca1569924b4349f8a3010439d06e20e2Debashree.JPG   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Mrs. Debasree Ghosh (Reg. Faculty DOJ 21/10/2009)   </h4>
+<p class="card-text"> <b> Qualifications: </b>M.E (Mechnical Engineering) B.I.T. Mesra, B.E (Chemical Engineering) R.E.C. Durgapur  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Process Control, Heat Transfer, Chemical Reaction Engg.  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    dghosh@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImge28d37adeeba4e8dbd34b40696a8be3fDHARMENDRA%20SIR.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Dharmendra Pandey (Reg.Faculty DOJ 27/2/2015)   </h4>
+<p class="card-text"> <b> Qualifications: </b>Ph.D. (Chemical Engineering, IIT Kanpur, M. Tech. (Chemical Engineering, IIT Bombay), B. Tech. (Chemical Engineering, C.S.J.M. University Kanpur)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Heterogeneous catalysis and reaction engineering, Supported and unsupported bimetallic catalysis: synthesis, characterization and reactivity, Environmental Pollution Control, Molecular dynamics  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    dpandey.iitk@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg426476102d33410e9ccadd5c4d4970e1photo%20(1).jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Anand Bharti (TEQIP Faculty DOJ 3/1/18)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD (IIT Guwahati), B.Sc (Engg.) (BIT Sindri)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Phase Equilibria, Separation Processes, Molecular Simulation.  </p>  <p class="card-text"> <b> Contact: </b>    8011097281  </p>  <p class="card-text"> <b> Email: </b>    gandhiforbes@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg766f6ae75beb4146bf14d986313ea62bPhotoAshok.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Ashok K Baranwal (TEQIP Faculty DOJ 3/1/2018)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD (IIT Kanpur), MTech (ISM Dhanbad), BTech (BIT Sindri Dhanbad)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Fluid Mechanics, Heat Transfer  </p>  <p class="card-text"> <b> Contact: </b>    9113751108  </p>  <p class="card-text"> <b> Email: </b>    ashokbit2k5@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImgf13b491d34194096b7e4779589bc5aa8Photograph.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Y N Prajapati (TEQIP Faculty DOJ 3/1/2018)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD (IIT Kanpur), M. Tech (IIT Guwahati), B. Tech (BIET Jhansi)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Adsorption, Catalysis, Nanomaterial synthesis  </p>  <p class="card-text"> <b> Contact: </b>    9695595989  </p>  <p class="card-text"> <b> Email: </b>    prajapatiyn@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg6e49430896ea4680a4c9593a56ad8427CHANDAN%20SIR%20.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Chandan K. Das (Reg. Faculty DOJ 30/6/2017)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD.(IIT Kanpur), M.E.(Jadavpur University), B.E.(Jadavpur University)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Molecular Modeling, Phase Transition, Crystal Structure Analysis  </p>  <p class="card-text"> <b> Contact: </b>    8132852063  </p>  <p class="card-text"> <b> Email: </b>    cdchandandas9@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg32268f790b2c4381ba38bb9e746b7301IMG_20180203_080505890%5B1%5D.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Dan Bahadur (TEQIP Faculty DOJ 4/1/2018)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD , M. Tech in Chemical Engineering  IIT (BHU) Varanasi  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Catalysis and Nanotechnology   </p>  <p class="card-text"> <b> Contact: </b>    9336709751  </p>  <p class="card-text"> <b> Email: </b>    danabahadur.che@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg0175d18786da43c8942342ff33bcf2ecnirupama.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Nirupama (TEQIP Faculty DOJ 4/1/2018)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD(IIT Roorkee), M.Tech (IIT Roorkee), B.E. (S.L.I.E.T, Longowal, Punjab)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Polymer composites, Risk assessment  </p>  <p class="card-text"> <b> Contact: </b>    9771313741  </p>  <p class="card-text"> <b> Email: </b>    nirupama.2k3@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/user_admince/FacultyImage/FacImg_20150730151024524_4cc958201c5b4f76a5950302d61cc6c2_JS.jpg   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Sudeepan.J (Reg. Faculty DOJ 4/9/2009)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD (Jadavpur University); M. Tech (Plastic Tech) Anna University, Chennai; B. E. (Mechanical Engineering)Bharathiyar University Coimbatore  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Product  Design, CAD, CAM,CAE, Polymer processing, mold Design  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    Sudeepan1982@yahoo.com, sudeepan@bitmesra.ac.in  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+<section>  <div class="container py-3" style="background-color:rgba(255,255,255,0.7);width:50%;margin-left:140px;border-radius:10px;box-shadow:5px 5px rgba(244, 36, 15,0.7);" >   <div class="card"> <div class="row ">          <div class="col-md-4">     <img  style="height: 150px; width:145px" src="    https://www.bitmesra.ac.in/UploadedDocuments/useradmince/FacultyImage/FacImg085effc25b9f4a3fbb29f1ffcccf4e03Anirudha.singh.png   "  class= "w-75" >  </div> <div class="col-md-8 px-3" style="margin-left:0 ; padding-left:0">             <div class="card-block px-3">  <h4 class="card-title"> Dr. Anirudha Singh (Adjunct Faculty DOJ Aug 2018)   </h4>
+<p class="card-text"> <b> Qualifications: </b>PhD (University of Akron, Ohio, USA), Postdoctoral Fellow(Biomedical Engineering, Johns Hopkins University, USA), M. Tech.(Polymer Sc. & Tech., IIT, New Delhi), BE (Polymer Engg., BIT, Mesra)  </p>
+ <p class="card-text"> <b> Area of Interest: </b>    Regenerative Urology, biomaterials, polymer chemistry, stem cell and tissue engineering for regenerating biologically and mechanically functional tissues/organs, specifically urological tissues and organs, musculo-skeletal and ocular tissues.  </p>  <p class="card-text"> <b> Contact: </b>    Not Available  </p>  <p class="card-text"> <b> Email: </b>    anirudhasingh@gmail.com  </p>  </div>   </div>        </div> </div> </div>  </section> <br> <br>
+
+
+
+
+
+
+<!--footer -->
+
+   <div class="footer">
+  	<div class="container" style="color:white">
+  		<div class="row">
+  			<div class="col-sm-4">
+  			<address style="color:white;font-size:15px;">
+  			<b><u>Contact BIT Campuses</u></b>
+  			<br>BIT Mesra Campus
+  			<br>Birla Institute of Technology, Mesra
+  			<br>Ranchi, Jharkhand 835215
+  			<br>PABX: +91 651 2275444/2275896
+  			<br>Fax: 0651 2275401
+  			</address>
+  			</div>
+  			<div class="col-sm-4">
+  				<ul style="list-style-type: none;font-size:17px;">
+  				<li><a href="http://erp.bitmesra.ac.in/iitmsv4eGq0RuNHb0G5WbhLmTKLmTO7YBcJ4RHuXxCNPvuIw=?enc=EGbCGWnlHNJ/WdgJnKH8DA==" ><span class="dot"></span>ERP</a><li>
+  				<li><a href="/home"><span class="dot"></span>HOME</a><li>
+            <li><a href="http://115.114.127.54:8080/psp/bitcsprd/EMPLOYEE/HRMS/c/B_STDNT_SLF.B_SEM_CRSE_MAP.GBL?PORTALPARAM_PTCNAV=BIT_STDNT_REGISTRATION&EOPP.SCNode=HRMS&EOPP.SCPortal=EMPLOYEE&EOPP.SCName=CO_EMPLOYEE_SELF_SERVICE&EOPP.SCLabel=Self%2520Service&EOPP.SCPTfname=CO_EMPLOYEE_SELF_SERVICE&FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.BIT_STDNT_REGISTRATION&IsFolder=false&cmd=login&languageCd=ENG" style="margin-left:31	px;"><span class="dot"></span>Old ERP</a><li>
+  				</ul>
+  			</div>
+  			<div class="col-sm-4">
+  				<ul style="list-style-type: none;font-size:17px;float:left;">
+  				<li><a href="http://placement.bitmesra.ac.in/" style="margin-left:14px;"><span class="dot"></span>Placement Portal</a><li>
+  				<li><a href="https://www.bitmesra.ac.in/UploadedDocuments/adminpoly/files/List%20of%20Holidays.pdf"><span class="dot"></span>List of holidays</a><li>
+  				<li><a href="https://www.bitmesra.ac.in/Show_Content_Section?cid=1&pid=285"><span class="dot"></span>TELEPHONE DIRECTORY</a><li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+   </div>
+  <!--footer ends-->
+
+ </body></html>
